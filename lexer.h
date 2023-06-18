@@ -10,15 +10,15 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FILE_TEST_LEXER_H
-#define FILE_TEST_LEXER_H
+#ifndef LEXER_H
+# define LEXER_H
 
-#include <stdio.h>
-#include <string.h>
-#include <unistd.h>
-#include <stdlib.h>
-#include <fcntl.h>
-#include <sys/wait.h>
+# include <stdio.h>
+# include <string.h>
+# include <unistd.h>
+# include <stdlib.h>
+# include <fcntl.h>
+# include <sys/wait.h>
 
 size_t	ft_strlen(const char *str);
 size_t	ft_strlcpy(char *dest, const char *src, size_t destsize);
@@ -36,4 +36,4 @@ char	**ft_split2(char const *s, char c);
 char	**find_path(char **envp);
 char	*valid_cmd(char **path, char *cmd);
 
-#endif //FILE_TEST_LEXER_H
+#endif //LEXER_H
